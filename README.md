@@ -1,2 +1,2 @@
 # Pizza-Place-Go-Web-Application
-Project: &lt;--! Pizza Place Go--> Your favorite flavors, delivered fast 🍕: The closest option right in town is Pizza place on Airport Road. However, if you are looking for standard chain pizza or premium wood-fired alternatives, you will find highly-rated spots a short drive away in Hingurakgoda and Habarana.
+Project: &lt;--! Pizza Place Go--> Your favorite flavors, delivered fast 🍕: This web application consolidates everything into a single, responsive screen. Users never have to wait for new pages to load, making it exceptionally fast on mobile phones and low-bandwidth local networks

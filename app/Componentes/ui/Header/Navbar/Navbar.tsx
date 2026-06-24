@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
     return (
@@ -25,12 +26,40 @@ export default function Navbar() {
             ">
                 {/* Logo */}
                 <Link href="/" className="
+                flex
+                items-center
+                gap-3
+                ">
+                    <Image
+                        src="/logo.png"
+                        alt="Logo"
+                        width={50}
+                        height={50}
+                        priority
+                        className="
+                            h-15
+                            w-15
+                            object-cover"
+                    >
+                    </Image>
+                    {/* TEXT NEXT TO LOGO */}
+                    <span className="
+                    text-xl
+                    font-bold
+                    text-slate-950
+                    dark:text-white
+                    ">
+                        Pizza Place Go
+                    </span>
+                </Link>
+
+                <Link href="/" className="
                 text-xl
                 font-bold
                 text-slate-950
                 dark:text-white
                 ">
-                    Brand
+
                 </Link>
 
                 {/* Navigation Links */}

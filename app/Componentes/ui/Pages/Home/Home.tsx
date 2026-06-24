@@ -2,11 +2,11 @@ import Video from 'next-video';
 import myVideo from '@videos/pizza1.mp4';
 
 
-
 export default function Home() {
     return(
         <>
             <main className="relative w-screen h-screen overflow-hidden">
+                {/* the Background video myVideo */}
                 <Video
                     src={myVideo}
                     autoplay

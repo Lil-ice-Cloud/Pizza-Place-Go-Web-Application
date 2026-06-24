@@ -2,7 +2,7 @@ import Navbar from "@/components/ui/Header/Navbar/Navigationbar";
 import Home from "@/components/Pages/Home";
 
 
-export default function page() {
+export default function main() {
   return (
       <>
           <Navbar/>

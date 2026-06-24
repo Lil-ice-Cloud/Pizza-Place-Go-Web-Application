@@ -1,6 +1,6 @@
 import Video from 'next-video';
 import myVideo from '@videos/pizza1.mp4';
-import useSWR from 'swr'
+
 
 
 export default function Home() {

@@ -1,5 +1,6 @@
 import Video from 'next-video';
-import myVideo from '@videos/pizza1.mp4';
+import myVideo from '@/videos/PIZZA.mp4';
+
 
 
 export default function Home() {

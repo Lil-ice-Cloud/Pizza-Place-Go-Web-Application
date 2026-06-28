@@ -77,7 +77,7 @@ export default function Navbar() {
                     dark:text-slate-200
                     dark:hover:text-white
                     ">
-                        Features
+                        Locations
                     </Link>
                     <Link href="/pricing" className="
                     text-sm
@@ -88,7 +88,7 @@ export default function Navbar() {
                     dark:text-slate-200
                     dark:hover:text-white
                     ">
-                        Pricing
+                        Hot Deals
                     </Link>
                     <Link href="/contact" className="
                     rounded-full
@@ -103,7 +103,7 @@ export default function Navbar() {
                     dark:bg-white
                     dark:text-slate-950
                     ">
-                        Get Started
+                        Order
                     </Link>
                 </div>
             </div>

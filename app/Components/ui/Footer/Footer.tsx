@@ -156,7 +156,7 @@ export default function Footer() {
             {/* Bottom Copyright Block */}
             <div className="relative z-10 max-w-7xl mx-auto px-6 pt-8 mt-10 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-neutral-500 font-medium">
                 <p>&copy; {new Date().getFullYear()} Pizza Place Go. All rights reserved.</p>
-                <p className="flex items-center gap-1.5">
+                <section className="flex items-center gap-1.5">
                     Made & Collaboration<span className="text-red-500 animate-pulse">🔥</span> by{" "}
                     <span>
              <a href="https://www.linkedin.com/in/mr-thanuja-marisha/" >
@@ -184,7 +184,7 @@ export default function Footer() {
                             </h1>
                         </a>
           </span>
-                </p>
+                </section>
             </div>
         </footer>
     );

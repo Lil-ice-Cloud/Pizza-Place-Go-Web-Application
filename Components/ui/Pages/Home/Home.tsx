@@ -57,9 +57,9 @@ export default function Home() {
     const deals: Deal[] = [
         {
             id: "bogo",
-            title: "Double Trouble Deal",
+            title: "Cheese & Tomato",
             description: "Buy any Large Gourmet Pizza and get a Medium Classic Pizza absolutely free. Perfect for pair dining.",
-            price: "Rs. 4,490",
+            price: "Rs. 1000",
             originalPrice: "Rs. 7,290",
             image: "/pizza1.jpg",
             badge: "BOGO FREE",
@@ -283,7 +283,7 @@ export default function Home() {
             {/* Hot Deals Section */}
             <section id="hot-deals" className="relative w-full py-24 bg-neutral-950 text-white overflow-hidden border-t border-white/5">
                 {/* Radiant Glow in Background */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-600/10 rounded-full blur-[140px] pointer-events-none z-0" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-orange-600/10 rounded-full blur-[140px] pointer-events-none z-0" />
 
                 <div className="relative z-10 text-center max-w-2xl mx-auto mb-20 px-6">
                     <span className="text-amber-500 font-bold tracking-widest uppercase text-xs block mb-3 px-3 py-1 bg-amber-500/10 rounded-full w-max mx-auto border border-amber-500/20">
@@ -362,7 +362,7 @@ export default function Home() {
 
             {/* Smart Pizza Menu Section */}
             <section id="pizza-menu" className="relative w-full py-24 bg-neutral-950 text-white overflow-hidden border-t border-white/5">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-amber-500/5 rounded-full blur-[150px] pointer-events-none z-0" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-175 bg-amber-500/5 rounded-full blur-[150px] pointer-events-none z-0" />
 
                 <div className="relative z-10 max-w-7xl mx-auto px-6">
                     {/* Header */}
@@ -488,7 +488,7 @@ export default function Home() {
 
             {/* Testimonials Carousel Section */}
             <section id="testimonials" className="relative w-full py-24 bg-neutral-950 text-white overflow-hidden border-t border-white/5 pb-36">
-                <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-orange-600/5 rounded-full blur-[130px] pointer-events-none z-0" />
+                <div className="absolute bottom-0 right-1/4 w-125 h-125 bg-orange-600/5 rounded-full blur-[130px] pointer-events-none z-0" />
 
                 <div className="relative z-10 max-w-4xl mx-auto px-6">
                     {/* Heading */}

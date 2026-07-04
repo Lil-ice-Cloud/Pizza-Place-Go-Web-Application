@@ -25,7 +25,7 @@ export default function Navbar() {
             justify-between
             ">
                 {/* Logo */}
-                <Link href="/" className="
+                <Link href="/public" className="
                 flex
                 items-center
                 gap-3
@@ -53,7 +53,7 @@ export default function Navbar() {
                     </span>
                 </Link>
 
-                <Link href="/" className="
+                <Link href="/public" className="
                 text-xl
                 font-bold
                 text-slate-950

@@ -20,18 +20,18 @@ export default function Footer() {
     return (
         <footer className="relative w-full bg-neutral-900 text-neutral-300 border-t border-white/5 backdrop-blur-md pt-20 pb-10 overflow-hidden">
             {/* Radiant glow effect inside footer */}
-            <div className="absolute -bottom-24 -left-20 w-[400px] h-[400px] bg-orange-600/5 rounded-full blur-[100px] pointer-events-none z-0" />
+            <div className="absolute -bottom-24 -left-20 w-100 h-100 bg-orange-600/5 rounded-full blur-[100px] pointer-events-none z-0" />
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 pb-16 border-b border-white/5">
 
                 {/* Column 1: Brand & Socials */}
                 <div className="flex flex-col gap-6">
-                    <Link href="/" className="flex items-center gap-3">
+                    <Link href="/public" className="flex items-center gap-3">
                         <Image
                             src="/logo.png"
                             alt="Pizza Place Go Logo"
-                            width={45}
-                            height={45}
+                            width={80}
+                            height={0}
                             className="object-cover rounded-full"
                         />
                         <span className="text-lg font-black tracking-wider text-white">
@@ -72,7 +72,15 @@ export default function Footer() {
 
                 {/* Column 2: Quick Links */}
                 <div className="flex flex-col gap-5">
-                    <h4 className="text-white font-bold text-sm tracking-wider uppercase">Quick Links</h4>
+                    <h4 className="
+                    text-white
+                    font-bold
+                    text-sm
+                    tracking-wider
+                    uppercase
+                    ">
+                        Quick Links
+                    </h4>
                     <ul className="flex flex-col gap-3 text-sm font-medium">
                         <li>
                             <Link href="/features" className="hover:text-amber-500 transition-colors duration-300">
@@ -98,10 +106,10 @@ export default function Footer() {
                 </div>
 
                 {/* Column 3: Contact & Hours */}
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-5 f ">
                     <h4 className="text-white font-bold text-sm tracking-wider uppercase">Hours & Contact</h4>
                     <ul className="flex flex-col gap-3.5 text-sm leading-relaxed text-neutral-400">
-                        <li className="flex items-start gap-2">
+                        <li className="flex items-start gap-2 ">
                             <span className="text-amber-500 font-bold">🕒</span>
                             <div>
                                 <p className="font-semibold text-white text-xs uppercase">Wood-fired Oven Hours</p>
@@ -111,11 +119,19 @@ export default function Footer() {
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="text-amber-500 font-bold">📍</span>
-                            <span className="text-xs">No. 42, Galle Road, Colombo 03, Sri Lanka</span>
+                            <span className="text-xs"> Pizza Place Airport Road, Hingurakgoda</span>
                         </li>
                         <li className="flex items-center gap-2">
                             <span className="text-amber-500 font-bold">📞</span>
-                            <span className="text-xs">+94 (11) 234-5678</span>
+                            <span className="text-xs">+94 27 224-5030 | +94 70 1796-000  </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-amber-500 font-bold">📍</span>
+                            <span className="text-xs"> Pizza Place Dambulla Road, Habarana</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-amber-500 font-bold">📞</span>
+                            <span className="text-xs">+94 71 333-4440 </span>
                         </li>
                     </ul>
                 </div>
@@ -157,7 +173,12 @@ export default function Footer() {
             <div className="relative z-10 max-w-7xl mx-auto px-6 pt-8 mt-10 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-neutral-500 font-medium">
                 <p>&copy; {new Date().getFullYear()} Pizza Place Go. All rights reserved.</p>
                 <section className="flex items-center gap-1.5">
-                    Made & Collaboration<span className="text-red-500 animate-pulse">🔥</span> by{" "}
+                    Made & Collaboration<span className="
+                    text-red-500
+                    animate-pulse"
+                >🔥
+                </span>
+                    by{" "}
                     <span>
              <a href="https://www.linkedin.com/in/mr-thanuja-marisha/" >
                  <h1 className="

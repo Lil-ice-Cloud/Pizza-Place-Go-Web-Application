@@ -234,10 +234,12 @@ export default function Home() {
                 </Video>
                 {/* Hero Dark Overlay */}
                 <div className="absolute inset-0 bg-black/60 z-10" />
+                {/* Hero Text Styles */}
                 <section className="
                 absolute
                 left-0
                 bottom-0
+                top-60
                 w-full
                 px-12
                 pd-12

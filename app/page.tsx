@@ -1,13 +1,15 @@
-import Header from "@/app/Componentes/ui/Header/Header"
-import Home from "@/app/Componentes/ui/Pages/Home/Home";
-import Navbar from "@/app/Componentes/ui/Header/Navbar/Navbar";
+import Header from "@/app/Components/ui/Header/Header"
+import Navbar from "@/app/Components/ui/Header/Navbar/Navbar";
+import Home from "@/app/Components/ui/Pages/Home/Home";
+import Footer from "@/app/Components/ui/Footer/Footer";
 
 export default function MainPage() {
   return (
       <>
-       <Header/>
-          <Navbar/>
-          <Home/>
+           <Header/>
+              <Navbar/>
+                  <Home/>
+              <Footer/>
       </>
   );
 }

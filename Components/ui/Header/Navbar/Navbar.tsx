@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
+import {ShoppingCart} from "lucide-react";
 export default function Navbar() {
     return (
         <nav className="
@@ -11,7 +11,7 @@ export default function Navbar() {
         z-50
         border-b
         border-white/10
-        bg-white/20
+        bg-black/20
         px-6
         py-4
         backdrop-blur-md
@@ -46,8 +46,7 @@ export default function Navbar() {
                     <span className="
                     text-xl
                     font-bold
-                    text-slate-950
-                    dark:text-white
+                    text-white
                     ">
                         Pizza Place Go
                     </span>
@@ -56,8 +55,7 @@ export default function Navbar() {
                 <Link href="/public" className="
                 text-xl
                 font-bold
-                text-slate-950
-                dark:text-white
+                text-white
                 ">
 
                 </Link>
@@ -71,9 +69,9 @@ export default function Navbar() {
                     <Link href="/features" className="
                     text-sm
                     font-medium
-                    text-slate-800
+                    text-slate-100
                     transition-colors
-                    hover:text-slate-950
+                    hover:text-orange-400
                     dark:text-slate-200
                     dark:hover:text-white
                     ">
@@ -82,28 +80,39 @@ export default function Navbar() {
                     <Link href="/pricing" className="
                     text-sm
                     font-medium
-                    text-slate-800
+                    text-slate-100
                     transition-colors
-                    hover:text-slate-950
+                    hover:text-orange-400
                     dark:text-slate-200
                     dark:hover:text-white
                     ">
                         Hot Deals
                     </Link>
-                    <Link href="/contact" className="
-                    rounded-full
-                    bg-slate-950
-                    px-4
-                    py-2
-                    text-sm
-                    font-medium
-                    text-white
-                    transition-transform
-                    hover:scale-105
-                    dark:bg-white
-                    dark:text-slate-950
+                    <Link
+                        href="/contact"
+                          className="
+                          inline-flex
+                          items-center
+                          gap-2
+                          rounded-full
+                        bg-slate-100
+                          px-4
+                          py-2
+                          text-sm
+                          font-medium
+                        text-black
+                          transition-transform
+                          hover:scale-105
+                        hover:text-orange-400
                     ">
-                        Order
+                        <span>
+                            Order
+                        </span>
+                        <ShoppingCart
+                            className="
+                            h-auto
+                            w-auto
+                            "/>
                     </Link>
                 </div>
             </div>

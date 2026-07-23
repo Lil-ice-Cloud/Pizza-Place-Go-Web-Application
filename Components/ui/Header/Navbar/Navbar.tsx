@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import {ShoppingCart} from "lucide-react";
+import hot_dealsPage from "@/app/Meals_and_Pricing/page";
 export default function Navbar() {
     return (
         <nav className="
@@ -66,30 +67,41 @@ export default function Navbar() {
                 items-center
                 gap-6
                 ">
-                    <Link href="/features" className="
+                    <Link href="/Locations" className="
                     text-sm
                     font-medium
-                    text-slate-100
+                  text-slate-100
                     transition-colors
-                    hover:text-orange-400
-                    dark:text-slate-200
-                    dark:hover:text-white
+                  hover:text-orange-400
+                  dark:text-slate-200
+                  dark:hover:text-white
                     ">
                         Locations
                     </Link>
-                    <Link href="/pricing" className="
+                    <Link href="/Meals_and_Pricing" className="
                     text-sm
                     font-medium
-                    text-slate-100
+                  text-slate-100
                     transition-colors
-                    hover:text-orange-400
-                    dark:text-slate-200
-                    dark:hover:text-white
+                  hover:text-orange-400
+                  dark:text-slate-200
+                  dark:hover:text-white
                     ">
-                        Hot Deals
+                        Meals & Pricing
+                    </Link>
+                    <Link href="/Spatial_Events" className="
+                    text-sm
+                    font-medium
+                  text-slate-100
+                    transition-colors
+                  hover:text-orange-400
+                  dark:text-slate-200
+                  dark:hover:text-white
+                    ">
+                        Spatial Events
                     </Link>
                     <Link
-                        href="/contact"
+                        href="/Order"
                           className="
                           inline-flex
                           items-center

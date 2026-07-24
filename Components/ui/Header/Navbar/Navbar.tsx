@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import {ShoppingCart} from "lucide-react";
-import hot_dealsPage from "@/app/Meals_and_Pricing/page";
+
 export default function Navbar() {
     return (
         <nav className="
@@ -67,6 +67,17 @@ export default function Navbar() {
                 items-center
                 gap-6
                 ">
+                    <Link href="/#" className="
+                    text-sm
+                    font-medium
+                  text-slate-100
+                    transition-colors
+                  hover:text-orange-400
+                  dark:text-slate-200
+                  dark:hover:text-white
+                    ">
+                        Home
+                    </Link>
                     <Link href="/Locations" className="
                     text-sm
                     font-medium

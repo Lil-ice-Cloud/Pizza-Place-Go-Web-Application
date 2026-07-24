@@ -1,5 +1,9 @@
+import Navbar from "@/Components/ui/Header/Navbar/Navbar";
+
 export default function LocationsPage() {
     return (
-        <h1>Locations Page</h1>
+        <>
+        <Navbar/>
+        </>
     );
 }

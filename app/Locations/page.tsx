@@ -2,6 +2,7 @@
 
 import Navbar from "@/Components/ui/Header/Navbar/Navbar";
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
+import Footer from "@/Components/ui/Footer/Footer";
 
 const mapStyle = {
     width: "100%",
@@ -9,8 +10,8 @@ const mapStyle = {
 }
 
 const PinPoint = {
-    lat: 8.042356562269601,
-    lng: 80.95546416619862,
+    lat: 8.0417961,
+    lng: 80.954179,
 }
 /* const nightModeOptions = {
     styles: [
@@ -108,12 +109,16 @@ export default function LocationsPage() {
             ">
                 <div
                     className="
-                    grid
-                    grid-cols-1
-                    gap-40
                     px-16
-                    flex-col
+                    py-28
                     ">
+                    <section className="
+                    text-white
+                      text-right
+                    ">
+                        <h1>Pizza Place Hingurakgoda</h1>
+                        <p>Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
+                    </section>
                     <LoadScript googleMapsApiKey= {apiKey ||''} >
                         <div className="
                             border-8
@@ -123,7 +128,7 @@ export default function LocationsPage() {
                                 <GoogleMap
                                 mapContainerStyle={mapStyle}
                                 center={PinPoint}
-                                zoom={15}
+                                zoom={17}
                                 //options={nightModeOptions}
                                 >
                                     <Marker position={PinPoint}/>
@@ -132,6 +137,7 @@ export default function LocationsPage() {
                     </LoadScript>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

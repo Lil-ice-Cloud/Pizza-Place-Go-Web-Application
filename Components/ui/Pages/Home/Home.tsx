@@ -218,7 +218,12 @@ export default function Home() {
     const categories = ["All", "Veg", "Non-Veg", "Spicy", "Gourmet"];
 
     return (
-        <div className="w-full min-h-screen bg-neutral-950 scroll-smooth">
+        <div className="
+        w-full
+        min-h-screen
+        bg-neutral-950
+        scroll-smooth
+        ">
             {/* Hero Section */}
             <main className="relative w-full h-screen overflow-hidden flex items-center justify-center">
                 {/* Background Video */}

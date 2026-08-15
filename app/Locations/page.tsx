@@ -5,8 +5,11 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
 import Footer from "@/Components/ui/Footer/Footer";
 
 const mapStyle = {
-    width: "100%",
-    height: "70vh"
+    width: "50%",
+    height: "70vh",
+    border: "8px solid #f5f5f5",
+    borderRadius: "12px",
+    overflow: "hidden",
 }
 
 const PinPoint = {
@@ -111,29 +114,28 @@ export default function LocationsPage() {
                     className="
                     px-16
                     py-28
+                    w-auto
                     ">
-                    <section className="
-                    text-white
-                      text-right
-                    ">
-                        <h1>Pizza Place Hingurakgoda</h1>
-                        <p>Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
-                    </section>
                     <LoadScript googleMapsApiKey= {apiKey ||''} >
-                        <div className="
-                            border-8
-                          border-neutral-100
-                            rounded-xl
-                          ">
+                        <div>
                                 <GoogleMap
                                 mapContainerStyle={mapStyle}
                                 center={PinPoint}
-                                zoom={17}
+                                zoom={19}
                                 //options={nightModeOptions}
                                 >
                                     <Marker position={PinPoint}/>
                                 </GoogleMap>
                         </div>
+                                <section className="
+
+                                w-
+                              text-white
+                                text-left
+                            ">
+                                    <h1>Pizza Place Hingurakgoda</h1>
+                                    <p>Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
+                                </section>
                     </LoadScript>
                 </div>
             </div>

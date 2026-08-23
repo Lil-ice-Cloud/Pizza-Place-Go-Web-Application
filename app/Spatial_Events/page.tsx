@@ -10,6 +10,7 @@ export default function SpatialEventsPage() {
             scroll-smooth
             "/>
             <Navbar/>
+
         </>
     );
 }

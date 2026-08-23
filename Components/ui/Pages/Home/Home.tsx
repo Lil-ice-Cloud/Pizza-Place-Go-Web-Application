@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import myVideo from "@videos/PIZZA.mp4";
 import Video from "next-video";
+import Background from "@/Components/ui/Live_Background/Background";
 
 interface Deal {
     id: string;
@@ -227,16 +228,7 @@ export default function Home() {
             {/* Hero Section */}
             <main className="relative w-full h-screen overflow-hidden flex items-center justify-center">
                 {/* Background Video */}
-                <Video
-                    src={myVideo}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    controls={false}
-                    className="absolute inset-0 w-full h-full object-cover z-0"
-                >
-                </Video>
+                <Background/>
                 {/* Hero Dark Overlay */}
                 <div className="absolute inset-0 bg-black/60 z-10" />
                 {/* Hero Text Styles */}

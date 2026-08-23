@@ -5,8 +5,8 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
 import Footer from "@/Components/ui/Footer/Footer";
 
 const mapStyle = {
-    width: "50%",
-    height: "70vh",
+    width: "100%",
+    height: "50vh",
     border: "8px solid #f5f5f5",
     borderRadius: "12px",
     overflow: "hidden",
@@ -112,41 +112,56 @@ export default function LocationsPage() {
             ">
                 <div
                     className="
+                    flex
+                    flex-row
+                    gap-8
+                    justify-between
+                    items-start
                     px-16
                     py-28
-                    w-auto
+                    w-full
                     ">
                     <LoadScript googleMapsApiKey= {apiKey ||''} >
-                        <div>
-                                <GoogleMap
-                                mapContainerStyle={mapStyle}
-                                center={PinPoint}
-                                zoom={19}
-                                //options={nightModeOptions}
-                                >
-                                    <Marker position={PinPoint}/>
-                                </GoogleMap>
-                        </div>
-                                <section className="
-
-                                w-
-                              text-white
-                                text-left
-                            ">
-                                    <h1>Pizza Place Hingurakgoda</h1>
-                                    <p>Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
-                                </section>
-                    </LoadScript>
-                </div>
-            </div>
-
-                <div
+                        {/* MAP 1*/}
+                            <div className="
+                                    w-1/2
+                                    flex
+                                    flex-col
+                                    gap-4
+                        ">
+                            <div>
+                                    <GoogleMap
+                                    mapContainerStyle={mapStyle}
+                                    center={PinPoint}
+                                    zoom={19}
+                                    //options={nightModeOptions}
+                                    >
+                                        <Marker position={PinPoint}/>
+                                    </GoogleMap>
+                                </div>
+                                        <section className="
+                                              text-white
+                                                text-left
+                                        ">
+                                            <h1 className="
+                                                text-xl
+                                                font-bold
+                                            ">
+                                                Pizza Place Hingurakgoda</h1>
+                                            <p className="
+                                                text-neutral-400
+                                            ">
+                                                Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
+                                        </section>
+                                </div>
+                    {/* MAP 2*/}
+                 <div
                     className="
-                    px-16
-                    py-28
-                    w-auto
+                    w-1/2
+                    flex
+                    flex-col
+                    gap-4
                     ">
-                    <LoadScript googleMapsApiKey= {apiKey ||''} >
                         <div>
                             <GoogleMap
                                 mapContainerStyle={mapStyle}
@@ -157,18 +172,25 @@ export default function LocationsPage() {
                                 <Marker position={PinPoint}/>
                             </GoogleMap>
                         </div>
-                        <section className="
-
-                                w-
-                              text-white
-                                text-left
-                            ">
-                            <h1>Pizza Place Hingurakgoda</h1>
-                            <p>Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
-                        </section>
+                            <section className="
+                                  text-white
+                                    text-left
+                                ">
+                                <h1 className="
+                                    text-xl
+                                    font-bold
+                                ">
+                                    Pizza Place Hingurakgoda</h1>
+                                <p className="
+                                    text-neutral-400
+                                ">
+                                    Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
+                            </section>
+                        </div>
                     </LoadScript>
-                </div>
+                    </div>
 
+                </div>
             <Footer/>
         </>
     );

@@ -16,6 +16,19 @@ const PinPoint = {
     lat: 8.0417961,
     lng: 80.954179,
 }
+
+const mapStyle2 = {
+    width: "100%",
+    height: "50vh",
+    border: "8px solid #f5f5f5",
+    borderRadius: "12px",
+    overflow: "hidden",
+}
+
+const PinPoint2 = {
+    lat: 8.0363505,
+    lng: 80.7535578,
+}
 /* const nightModeOptions = {
     styles: [
         { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
@@ -151,7 +164,7 @@ export default function LocationsPage() {
                                             <p className="
                                                 text-neutral-400
                                             ">
-                                                Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
+                                                Address: Airport Road,Hingurakgoda, 51400,Polonnaruwa,Sri Lanka.</p>
                                         </section>
                                 </div>
                     {/* MAP 2*/}
@@ -164,12 +177,12 @@ export default function LocationsPage() {
                     ">
                         <div>
                             <GoogleMap
-                                mapContainerStyle={mapStyle}
-                                center={PinPoint}
+                                mapContainerStyle={mapStyle2}
+                                center={PinPoint2}
                                 zoom={19}
                                 //options={nightModeOptions}
                             >
-                                <Marker position={PinPoint}/>
+                                <Marker position={PinPoint2}/>
                             </GoogleMap>
                         </div>
                             <section className="
@@ -180,11 +193,11 @@ export default function LocationsPage() {
                                     text-xl
                                     font-bold
                                 ">
-                                    Pizza Place Hingurakgoda</h1>
+                                    Pizza Place Habarana</h1>
                                 <p className="
                                     text-neutral-400
                                 ">
-                                    Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
+                                    Address: Dambulla road, Habarana, North Central Province, 50150, Sri Lanka.</p>
                             </section>
                         </div>
                     </LoadScript>

@@ -165,6 +165,15 @@ export default function LocationsPage() {
                                                 text-neutral-400
                                             ">
                                                 Address: Airport Road,Hingurakgoda, 51400,Polonnaruwa,Sri Lanka.</p>
+                                            <p className="
+                                                text-neutral-400
+                                                ">
+                                                Contacts Details: (Delivery +94 70 1796-000) </p>
+                                            <p className="
+                                                text-neutral-400
+
+                                                ">
+                                                Branch Hotline: +94 27 224-5030 | +94 710 466 566 </p>
                                         </section>
                                 </div>
                     {/* MAP 2*/}
@@ -198,6 +207,10 @@ export default function LocationsPage() {
                                     text-neutral-400
                                 ">
                                     Address: Dambulla road, Habarana, North Central Province, 50150, Sri Lanka.</p>
+                                <p className="
+                                    text-neutral-400
+                                ">
+                                    Contacts: +94 71 333-4440 </p>
                             </section>
                         </div>
                     </LoadScript>

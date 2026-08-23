@@ -188,10 +188,9 @@ export default function LocationsPage() {
                             </section>
                         </div>
                     </LoadScript>
-                    </div>
-
                 </div>
-            <Footer/>
+                <Footer/>
+            </div>
         </>
     );
 }

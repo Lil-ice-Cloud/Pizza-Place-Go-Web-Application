@@ -166,7 +166,6 @@ export default function Navbar(){
                     </button>
                 </div>
             </div>
-
             {isOpen && (
                 <div className="
                 md:hidden

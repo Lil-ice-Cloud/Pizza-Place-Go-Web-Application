@@ -1,8 +1,15 @@
+"use client";
+
+import { useState} from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-import {ShoppingCart} from "lucide-react";
+import { ShoppingCart, Menu , X } from "lucide-react";
 
-export default function Navbar() {
+export default function Navbar(){
+    const [ isOpen, setIsOpen ] = useState(false);
+
+    const toggleMenu = () => setIsOpen(!isOpen);
+
     return (
         <nav className="
         fixed
@@ -63,7 +70,8 @@ export default function Navbar() {
 
                 {/* Navigation Links */}
                 <div className="
-                flex
+                hidden
+                md:flex
                 items-center
                 gap-6
                 ">
@@ -138,7 +146,106 @@ export default function Navbar() {
                             "/>
                     </Link>
                 </div>
+
+                {/* Ham Menu */}
+                <div className="
+                md:hidden
+                flex
+                items-center
+                ">
+                    <button
+                    onClick={toggleMenu}
+                    className="
+                    text-white
+                    focus:outline-none
+                    p-2
+                    "
+                    aria-label="Toggle Menu"
+                    >
+                        {isOpen ? <X className=" h-6 w-6" /> : <Menu className=" h-6 w-6" />}
+                    </button>
+                </div>
             </div>
+
+            {isOpen && (
+                <div className="
+                md:hidden
+                absolute
+                top-full
+                left-0
+                right-0
+                bg-black/99
+                border-b
+                border-white/10
+                px-6
+                py-6
+                flex
+                flex-col
+                gap-4
+                backdrop-blur-lg
+                ">
+                    <Link onClick={toggleMenu}
+                          href="/#" className="
+                          text-base
+                          font-medium
+                          text-white
+                          hover:text-orange-400
+                          py-2
+                          ">
+                        Home
+                    </Link>
+                    <Link onClick={toggleMenu}
+                          href="/Locations" className="
+                          text-base
+                          font-medium
+                          text-white
+                          hover:text-orange-400
+                          py-2
+                          ">
+                        Locations
+                    </Link>
+                    <Link onClick={toggleMenu}
+                          href="/Meals_and_Pricing" className="
+                          text-base
+                          font-medium
+                          text-white
+                          hover:text-orange-400
+                          py-2
+                          ">
+                        Meals and Pricing
+                    </Link>
+                    <Link onClick={toggleMenu}
+                          href="/Spatial_Events" className="
+                          text-base
+                          font-medium
+                          text-white
+                          hover:text-orange-400
+                          py-2
+                          ">
+                        Spatial Events
+                    </Link>
+                    <Link onClick={toggleMenu} href="/Order" className="
+                          inline-flex
+                          items-center
+                          justify-center
+                          gap-2
+                          rounded-full
+                          bg-slate-100
+                          py-3
+                          text-base
+                          font-medium
+                          text-black
+                          hover:text-orange-400
+                          ">
+                            <span>Order</span>
+                        <ShoppingCart
+                        className="
+                        h-5
+                        w-5"
+                        />
+                    </Link>
+                </div>
+              )}
         </nav>
     );
 }

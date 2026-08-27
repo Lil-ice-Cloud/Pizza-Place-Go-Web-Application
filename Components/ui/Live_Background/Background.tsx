@@ -1,6 +1,4 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import myVideo from "@videos/PIZZA.mp4";
+import myVideo from "@videos/PizzaGo.mp4";
 import Video from "next-video";
 
 export default function Background() {

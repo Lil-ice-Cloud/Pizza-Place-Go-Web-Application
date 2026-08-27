@@ -13,7 +13,7 @@ export default function Background02() {
                 loop
                 playsInline
                 controls={false}
-                className="absolute inset-0 w-full h-full object-cover z-0"
+                className="absolute inset-0 w-full h-5 object-cover z-0"
             >
             </Video>
         </>

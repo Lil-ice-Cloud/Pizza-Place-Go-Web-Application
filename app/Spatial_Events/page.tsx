@@ -8,7 +8,7 @@ export default function SpatialEventsPage() {
         <>
             <Navbar/>
             <Background02/>
-            <div className="
+            <span className="
                  w-full
                  min-h-screen
                  bg-neutral-950

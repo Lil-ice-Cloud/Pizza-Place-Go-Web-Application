@@ -1,20 +1,11 @@
 //import { useState, useEffect } from 'react';
 import Navbar from "@/Components/ui/Header/Navbar/Navbar";
-import Image from 'next/image';
-import myVideo from "@videos/PIZZA.mp4";
-import Video from "next-video";
-import Background from "@/Components/ui/Live_Background/Background";
+import Background02 from "@/Components/ui/Live_Background/Background02";
 
 export default function SpatialEventsPage() {
     return (
         <>
-            <Background/>
-            <div className="
-            w-full
-            min-h-screen
-            bg-neutral-950
-            scroll-smooth
-            "/>
+            <Background02/>
             <Navbar/>
         </>
     );

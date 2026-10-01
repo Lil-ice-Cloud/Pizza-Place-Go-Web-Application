@@ -1,4 +1,4 @@
-import myVideo from "@videos/PizzaGo.mp4";
+import myVideo from "@videos/Pizza.mp4";
 import Video from "next-video";
 
 export default function Background02() {

@@ -12,7 +12,15 @@ export default function SingUpPage() {
                  min-h-screen
                  bg-neutral-950
                  ">
-                <AuthUI/>
+                <div className="
+                pt-24
+                main-h-screen
+                flex
+                items-center
+                justify-center
+                ">
+                    <AuthUI/>
+                </div>
             </span>
             <Footer/>
         </>

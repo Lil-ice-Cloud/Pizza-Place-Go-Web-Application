@@ -7,9 +7,11 @@ export default function AuthUI() {
 
     return (
         <>
+
             <div className="
+            mx-auto
             w-107.5
-            bg-white
+            bg-black
             p-8
             rounded-2xl
             shadow-lg
@@ -25,7 +27,7 @@ export default function AuthUI() {
                         text-3xl
                         font-semibold
                         text-center
-                        text-black
+                        text-orange-400
                         ">
                             {isLoginMode ? "Login" : "Sign Up"}
                         </h2>

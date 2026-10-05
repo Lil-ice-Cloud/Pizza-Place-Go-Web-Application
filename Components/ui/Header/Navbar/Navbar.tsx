@@ -71,9 +71,12 @@ export default function Navbar(){
                 {/* Navigation Links */}
                 <div className="
                 hidden
-                md:flex
+                lg:flex
                 items-center
-                gap-6
+                justify-end
+                gap-5
+                xl:gap-6
+                grow
                 ">
                     <Link href="/#" className="
                     text-sm

@@ -25,17 +25,17 @@ export default function Background02() {
                     width: "100%",
                     height: "100%",
                     objectFit: "cover",
-                    '--media-object-cover': 'cover',
+                    '--media-object-fit': 'cover',
                     '--media-object-position': 'center',
                 }}
                 className="
                 absolute
                 inset-0
                 w-full
-                h-5
+                h-full
                 object-cover
-                z-0"
-            >
+                min-w-full
+            ">
                 </Video>
             </div>
         </>

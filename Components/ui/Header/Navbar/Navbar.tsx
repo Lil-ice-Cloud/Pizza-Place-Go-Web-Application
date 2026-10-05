@@ -130,6 +130,16 @@ export default function Navbar(){
                     ">
                         Spatial Events
                     </Link>
+                    <Link onClick={toggleMenu}
+                          href="/Careers" className="
+                          text-base
+                          font-medium
+                          text-white
+                          hover:text-orange-400
+                          py-2
+                          ">
+                        Careers
+                    </Link>
                     <Link
                         href="/Order"
                           className="
@@ -264,6 +274,16 @@ export default function Navbar(){
                           py-2
                           ">
                         Spatial Deals
+                    </Link>
+                    <Link onClick={toggleMenu}
+                          href="/Careers" className="
+                          text-base
+                          font-medium
+                          text-white
+                          hover:text-orange-400
+                          py-2
+                          ">
+                        Careers
                     </Link>
                     <Link onClick={toggleMenu} href="/Order" className="
                           inline-flex

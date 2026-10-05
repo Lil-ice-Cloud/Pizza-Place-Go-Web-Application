@@ -1,8 +1,9 @@
+'use client';
+
 import Navbar from "@/Components/ui/Header/Navbar/Navbar";
 import Footer from "@/Components/ui/Footer/Footer";
-import AuthUI from "@/Components/ui/auth_ui/auth_ui";
 
-export default function SingUpPage() {
+export default function SpatialDealsPage() {
     return (
         <>
             <Navbar/>
@@ -18,10 +19,15 @@ export default function SingUpPage() {
                 items-center
                 justify-center
                 ">
-                    <AuthUI/>
+
+                    <h1 className="
+                    text-white
+                    ">
+                        Display
+                    </h1>
                 </div>
             </span>
             <Footer/>
         </>
-    );
-}
+    )
+};

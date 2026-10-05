@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Anton, Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import dynamic from "next/dynamic";
 
+//const FacebookPixel = dynamic(import('../Components/FacebookPixel'));
 
 const inter = Inter({
   variable: "--font-inter",

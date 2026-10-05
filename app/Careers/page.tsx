@@ -1,10 +1,12 @@
+'use client';
+
 import Navbar from "@/Components/ui/Header/Navbar/Navbar";
 import Footer from "@/Components/ui/Footer/Footer";
-import AuthUI from "@/Components/ui/auth_ui/auth_ui";
 
-export default function SingUpPage() {
+export default function CareersPage() {
     return (
         <>
+
             <Navbar/>
             <span className="
                  w-full
@@ -18,10 +20,14 @@ export default function SingUpPage() {
                 items-center
                 justify-center
                 ">
-                    <AuthUI/>
+                    <h1 className="
+                    text-white
+                    ">
+                        Current Job Openings
+                    </h1>
                 </div>
             </span>
             <Footer/>
         </>
-    );
-}
+    )
+};

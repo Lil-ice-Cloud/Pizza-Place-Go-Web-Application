@@ -53,7 +53,7 @@ export default function AuthUI() {
                             font-medium 
                             transition-all 
                             duration-300 
-                            z-10 ${isLoginMode ? "text-white" : "text-black"}`}
+                            z-10 ${isLoginMode ? "text-white" : "text-orange-400"}`}
                         >
                             Logging
                         </button>
@@ -67,7 +67,7 @@ export default function AuthUI() {
                             font-medium 
                             transition-all 
                             duration-300 
-                            z-10 ${isLoginMode ? "text-black" : "text-white"}`}
+                            z-10 ${isLoginMode ? "text-orange-400" : "text-white"}`}
                         >
                             Sign Up
                         </button>
@@ -80,9 +80,9 @@ export default function AuthUI() {
                         w-1/2 
                         rounded-full 
                         bg-gradient-to-r 
-                        from-blue-700 
-                        via-cyan-600 
-                        to-cyan-200 
+                        from-orange-600 
+                        via-orange-700
+                        to-orange-400
                         transition-all 
                         duration-300 ${isLoginMode ? "left-0" : "left-1/2"}`}
                         ></div>

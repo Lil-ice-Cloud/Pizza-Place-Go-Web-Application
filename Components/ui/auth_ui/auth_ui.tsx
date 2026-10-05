@@ -163,7 +163,7 @@ export default function AuthUI() {
                     {isLoginMode && (
                         <div className="text-right">
                             <p className="
-                            text-cyan-600
+                            text-orange-400
                             hover:underline
                             cursor-pointer
                             text-sm
@@ -181,9 +181,9 @@ export default function AuthUI() {
                             w-full
                             p-3
                             bg-gradient-to-r
-                            from-blue-700
-                            via-cyan-600
-                            to-cyan-200
+                            from-orange-600
+                            via-orange-700
+                            to-orange-400
                             text-white
                             rounded-full
                             text-lg
@@ -210,7 +210,7 @@ export default function AuthUI() {
                                 setIsLoginMode(!isLoginMode);
                             }}
                             className="
-                            text-cyan-600
+                            text-orange-400
                             hover:underline
                             font-medium
                             "

@@ -12,7 +12,6 @@ export default function Header() {
                 w-auto
                 h-auto
                 ">
-
                 </section>
         </>
     )

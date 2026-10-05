@@ -1,12 +1,12 @@
 'use client';
 
 import Navbar from "@/Components/ui/Header/Navbar/Navbar";
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
+import {GoogleMap, Marker, useJsApiLoader} from '@react-google-maps/api'
 import Footer from "@/Components/ui/Footer/Footer";
 
 const mapStyle = {
-    width: "50%",
-    height: "70vh",
+    width: "100%",
+    height: "50vh",
     border: "8px solid #f5f5f5",
     borderRadius: "12px",
     overflow: "hidden",
@@ -15,6 +15,19 @@ const mapStyle = {
 const PinPoint = {
     lat: 8.0417961,
     lng: 80.954179,
+}
+
+const mapStyle2 = {
+    width: "100%",
+    height: "50vh",
+    border: "8px solid #f5f5f5",
+    borderRadius: "12px",
+    overflow: "hidden",
+}
+
+const PinPoint2 = {
+    lat: 8.0363505,
+    lng: 80.7535578,
 }
 /* const nightModeOptions = {
     styles: [
@@ -101,75 +114,126 @@ const PinPoint = {
 
 export default function LocationsPage() {
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
+    const { isLoaded } = useJsApiLoader({
+        id: 'google-map-script',
+        googleMapsApiKey: apiKey || ''
+    });
+
     return (
-        <>
-            <Navbar/>
-            <div className="
-            w-full
-            min-h-screen
-            bg-neutral-950
-            scroll-smooth
-            ">
-                <div
-                    className="
-                    px-16
-                    py-28
-                    w-auto
-                    ">
-                    <LoadScript googleMapsApiKey= {apiKey ||''} >
-                        <div>
-                                <GoogleMap
-                                mapContainerStyle={mapStyle}
-                                center={PinPoint}
-                                zoom={19}
-                                //options={nightModeOptions}
-                                >
-                                    <Marker position={PinPoint}/>
-                                </GoogleMap>
-                        </div>
-                                <section className="
 
-                                w-
-                              text-white
-                                text-left
+            <>
+                <Navbar/>
+                <div className="
+                w-full
+                min-h-screen
+                bg-neutral-950
+                scroll-smooth
+                ">
+                    {isLoaded ? (
+                        <>
+                        <div
+                            className="
+                        flex
+                        flex-row
+                        gap-8
+                        justify-between
+                        items-start
+                        px-16
+                        py-28
+                        w-full
+                        ">
+                                {/* MAP 1*/}
+                                <div className="
+                                        w-1/2
+                                        flex
+                                        flex-col
+                                        gap-4
                             ">
-                                    <h1>Pizza Place Hingurakgoda</h1>
-                                    <p>Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
-                                </section>
-                    </LoadScript>
-                </div>
+                                    <div>
+                                        <GoogleMap
+                                            mapContainerStyle={mapStyle}
+                                            center={PinPoint}
+                                            zoom={19}
+                                            //options={nightModeOptions}
+                                        >
+                                            <Marker position={PinPoint}/>
+                                        </GoogleMap>
+                                    </div>
+                                    <section className="
+                                                  text-white
+                                                    text-left
+                                            ">
+                                        <h1 className="
+                                                    text-xl
+                                                    font-bold
+                                                ">
+                                            Pizza Place Hingurakgoda</h1>
+                                        <p className="
+                                                    text-neutral-400
+                                                ">
+                                            Address: Airport Road,Hingurakgoda, 51400,Polonnaruwa,Sri Lanka.</p>
+                                        <p className="
+                                                    text-neutral-400
+                                                    ">
+                                            Contacts Details: (Delivery +94 70 1796-000) </p>
+                                        <p className="
+                                                    text-neutral-400
+
+                                                    ">
+                                            Branch Hotline: +94 27 224-5030 | +94 710 466 566 </p>
+                                    </section>
+                                </div>
+                                {/* MAP 2*/}
+                                <div
+                                    className="
+                        w-1/2
+                        flex
+                        flex-col
+                        gap-4
+                        ">
+                                    <div>
+                                        <GoogleMap
+                                            mapContainerStyle={mapStyle2}
+                                            center={PinPoint2}
+                                            zoom={19}
+                                            //options={nightModeOptions}
+                                        >
+                                            <Marker position={PinPoint2}/>
+                                        </GoogleMap>
+                                    </div>
+                                    <section className="
+                                      text-white
+                                        text-left
+                                    ">
+                                        <h1 className="
+                                        text-xl
+                                        font-bold
+                                    ">
+                                            Pizza Place Habarana</h1>
+                                        <p className="
+                                        text-neutral-400
+                                    ">
+                                            Address: Dambulla road, Habarana, North Central Province, 50150, Sri
+                                            Lanka.</p>
+                                        <p className="
+                                        text-neutral-400
+                                    ">
+                                            Contacts: +94 71 333-4440 </p>
+                                    </section>
+                                </div>
+                        </div>
+                    </>
+                    ):(
+                        <div className="
+                      text-white
+                        w-full
+                        text-center
+                        ">
+                        </div>
+                    )}
+                <Footer/>
             </div>
-
-                <div
-                    className="
-                    px-16
-                    py-28
-                    w-auto
-                    ">
-                    <LoadScript googleMapsApiKey= {apiKey ||''} >
-                        <div>
-                            <GoogleMap
-                                mapContainerStyle={mapStyle}
-                                center={PinPoint}
-                                zoom={19}
-                                //options={nightModeOptions}
-                            >
-                                <Marker position={PinPoint}/>
-                            </GoogleMap>
-                        </div>
-                        <section className="
-
-                                w-
-                              text-white
-                                text-left
-                            ">
-                            <h1>Pizza Place Hingurakgoda</h1>
-                            <p>Address: Airport Road,Hingurakgoda,51400,Polonnaruwa,Sri Lanka.</p>
-                        </section>
-                    </LoadScript>
-                </div>
-
-            <Footer/>
         </>
     );
 }

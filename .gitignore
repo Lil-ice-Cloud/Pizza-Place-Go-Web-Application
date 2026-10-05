@@ -48,4 +48,11 @@ yarn-error.log*
 #public/_next-video
 
 # Environment variables
-#.env.local
+.env
+.env.*
+.env.local
+.env.local.*
+
+# editor and local tooling
+.idea/
+.vscode/

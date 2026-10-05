@@ -136,7 +136,7 @@ export default function Footer() {
                         </li>
                         <li className="flex items-center gap-2">
                             <span className="text-amber-500 font-bold">📞</span>
-                            <span className="text-xs">+94 27 224-5030 | +94 70 1796-000  </span>
+                            <span className="text-xs">+94 27 224-5030 | +94 71 0466 566  </span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="text-amber-500 font-bold">📍</span>

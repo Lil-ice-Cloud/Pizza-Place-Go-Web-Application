@@ -35,7 +35,7 @@ export default function Background02() {
                 h-5
                 object-cover
                 z-0"
-                >
+            >
                 </Video>
             </div>
         </>

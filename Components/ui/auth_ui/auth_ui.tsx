@@ -7,11 +7,10 @@ export default function AuthUI() {
 
     return (
         <>
-
             <div className="
             mx-auto
             w-107.5
-            bg-black
+          bg-black
             p-8
             rounded-2xl
             shadow-lg
